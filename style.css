@@ -97,10 +97,12 @@ main{
     font-size:15px;
     letter-spacing:0;
     font-weight:400;
-    text-rendering:optimizeLegibility;
+    text-rendering:auto;
+    margin:0;
+}
 }
 
-h1{
+lh1{
     color:#f5f5f5;
     font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
     font-size:30px;
