@@ -51,8 +51,8 @@ header{
 .window-title{
     flex:1;
     text-align:center;
-    color:#9b9b9b;
-    font-family:"JetBrains Mono","SFMono-Regular",Consolas,monospace;
+    color:#8f8f8f;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
     font-size:13px;
 }
 
@@ -71,9 +71,9 @@ main{
 
 .prompt{
     color:#c7923e;
-    font-family:"JetBrains Mono","SFMono-Regular",Consolas,monospace;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
     font-size:14px;
-    letter-spacing:1px;
+    letter-spacing:0;
     margin:45px 0 30px;
 }
 
@@ -91,11 +91,13 @@ main{
 
 .ascii{
     color:#c7923e;
-    font-family:"JetBrains Mono","SFMono-Regular",Consolas,"DejaVu Sans Mono",monospace;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
     white-space:pre;
-    line-height:1.1;
+    line-height:1.08;
     font-size:15px;
     letter-spacing:0;
+    font-weight:400;
+    text-rendering:optimizeLegibility;
 }
 
 h1{
@@ -136,7 +138,7 @@ strong{
     border-radius:8px;
     color:#c7923e;
     text-decoration:none;
-    font-family:"JetBrains Mono","SFMono-Regular",Consolas,monospace;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
     transition:.3s;
 }
 
@@ -172,5 +174,4 @@ strong{
     .ascii{
         font-size:12px;
     }
-
 }
