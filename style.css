@@ -7,7 +7,7 @@
 body{
     background:#0d0d0d;
     color:#e8e8e8;
-    font-family:"Inter", Arial, sans-serif;
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
     display:flex;
     justify-content:center;
     align-items:flex-start;
@@ -15,315 +15,162 @@ body{
     padding:40px 20px;
 }
 
-
 .terminal{
-
     width:100%;
     max-width:1200px;
-
     background:#151515;
-
     border:1px solid #303030;
-
     border-radius:14px;
-
     overflow:hidden;
-
-    box-shadow:
-    0 25px 70px rgba(0,0,0,.5);
-
+    box-shadow:0 25px 70px rgba(0,0,0,.5);
 }
-
-
 
 header{
-
     height:46px;
-
     background:#202020;
-
     display:flex;
-
     align-items:center;
-
     padding:0 18px;
-
 }
-
-
 
 .dots{
-
     display:flex;
-
     gap:8px;
-
 }
-
 
 .dots span{
-
     width:12px;
-
     height:12px;
-
     border-radius:50%;
-
 }
 
-
-.dots span:nth-child(1){
-    background:#ff5f57;
-}
-
-
-.dots span:nth-child(2){
-    background:#febc2e;
-}
-
-
-.dots span:nth-child(3){
-    background:#28c840;
-}
-
-
+.dots span:nth-child(1){background:#ff5f57;}
+.dots span:nth-child(2){background:#febc2e;}
+.dots span:nth-child(3){background:#28c840;}
 
 .window-title{
-
     flex:1;
-
     text-align:center;
-
     color:#9b9b9b;
-
-    font-family:"JetBrains Mono","SFMono-Regular",monospace;
-
+    font-family:"JetBrains Mono","SFMono-Regular",Consolas,monospace;
     font-size:13px;
-
 }
-
-
 
 .window-title::after{
-
     content:"_";
-
     animation:blink 1s infinite;
-
 }
-
 
 @keyframes blink{
-
-    50%{
-        opacity:0;
-    }
-
+    50%{opacity:0;}
 }
-
-
 
 main{
-
     padding:70px 90px;
-
 }
-
-
 
 .prompt{
-
     color:#c7923e;
-
-    font-family:"JetBrains Mono","SFMono-Regular",monospace;
-
+    font-family:"JetBrains Mono","SFMono-Regular",Consolas,monospace;
     font-size:14px;
-
     letter-spacing:1px;
-
     margin:45px 0 30px;
-
 }
-
-
 
 .prompt::after{
-
     content:"_";
-
     animation:blink 1s infinite;
-
 }
-
-
 
 .hero{
-
     display:flex;
-
     align-items:center;
-
     gap:80px;
-
     padding:20px 0 50px;
-
 }
-
-
 
 .ascii{
-
     color:#c7923e;
-
-    font-family:"JetBrains Mono","SFMono-Regular",monospace;
-
+    font-family:"JetBrains Mono","SFMono-Regular",Consolas,"DejaVu Sans Mono",monospace;
     white-space:pre;
-
-    line-height:1.15;
-
+    line-height:1.1;
     font-size:15px;
-
+    letter-spacing:0;
 }
-
-
 
 h1{
-
-    color:#f2f2f2;
-
-    font-family:"Inter",Arial,sans-serif;
-
-    font-size:28px;
-
-    font-weight:600;
-
-    line-height:1.45;
-
-    letter-spacing:.5px;
-
+    color:#f5f5f5;
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+    font-size:30px;
+    font-weight:500;
+    line-height:1.35;
+    letter-spacing:-0.3px;
 }
-
-
 
 .line{
-
     height:1px;
-
     background:#303030;
-
     margin:50px 0;
-
 }
-
-
 
 p{
-
     color:#cfcfcf;
-
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
     font-size:16px;
-
     line-height:1.9;
-
     max-width:900px;
-
     margin-bottom:35px;
-
 }
-
-
 
 strong{
-
     color:#c7923e;
-
     font-weight:700;
-
     letter-spacing:.3px;
-
 }
-
-
 
 .button{
-
     display:inline-block;
-
     margin-top:30px;
-
     padding:14px 28px;
-
     border:1px solid #c7923e;
-
     border-radius:8px;
-
     color:#c7923e;
-
     text-decoration:none;
-
-    font-family:"JetBrains Mono","SFMono-Regular",monospace;
-
+    font-family:"JetBrains Mono","SFMono-Regular",Consolas,monospace;
     transition:.3s;
-
 }
-
-
 
 .button:hover{
-
     background:#c7923e;
-
     color:#111;
-
 }
-
-
 
 @media(max-width:800px){
 
     body{
-
         padding:15px;
-
     }
-
 
     main{
-
         padding:35px 25px;
-
     }
-
 
     .hero{
-
         flex-direction:column;
-
         align-items:flex-start;
-
         gap:40px;
-
     }
-
 
     h1{
-
         font-size:22px;
-
     }
-
 
     p{
-
         font-size:15px;
-
     }
 
-
     .ascii{
-
         font-size:12px;
-
     }
 
 }
