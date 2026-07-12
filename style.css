@@ -1,36 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  background: #0d1117;
-  color: #e6edf3;
-  font-family: "JetBrains Mono", "Courier New", monospace;
+  margin: 0;
+  min-height: 100vh;
+  background: #0b0f14;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 100vh;
-  margin: 0;
+  padding: 30px 15px;
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  color: #e6edf3;
 }
 
 .terminal {
-  width: 90%;
-  max-width: 800px;
-  background: #010409;
+  width: 100%;
+  max-width: 850px;
+  background: #0d1117;
   border: 1px solid #30363d;
-  border-radius: 16px;
+  border-radius: 14px;
   overflow: hidden;
-  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+  box-shadow: 0 25px 70px rgba(0,0,0,.6);
 }
 
 .topbar {
-  height: 45px;
+  height: 48px;
   background: #161b22;
   display: flex;
   align-items: center;
-  padding-left: 18px;
-  gap: 10px;
+  padding: 0 18px;
+  border-bottom: 1px solid #30363d;
+}
+
+.buttons {
+  display: flex;
+  gap: 8px;
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
+  width: 13px;
+  height: 13px;
   border-radius: 50%;
 }
 
@@ -47,27 +57,110 @@ body {
 }
 
 .title {
-  margin-left: 15px;
+  flex: 1;
+  text-align: center;
   color: #8b949e;
-  font-size: 14px;
+  font-size: 13px;
+  margin-right: 60px;
 }
 
 .content {
   padding: 35px;
-  line-height: 1.7;
 }
 
 .command {
   color: #58a6ff;
+  font-weight: bold;
+  margin-top: 25px;
 }
 
 h1 {
-  font-size: 32px;
-  margin-bottom: 10px;
+  font-size: 38px;
+  margin: 15px 0 8px;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #79c0ff;
+  font-weight: normal;
+}
+
+.intro {
+  color: #8b949e;
+  line-height: 1.7;
+  max-width: 650px;
 }
 
 hr {
   border: 0;
   border-top: 1px solid #30363d;
-  margin: 30px 0;
+  margin: 35px 0;
+}
+
+.card {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 10px;
+  padding: 18px;
+  margin: 15px 0;
+}
+
+.card span {
+  color: #7ee787;
+  font-size: 13px;
+}
+
+.card b {
+  display: block;
+  margin: 8px 0;
+  color: white;
+}
+
+.card p {
+  margin: 0;
+  color: #8b949e;
+}
+
+.project {
+  margin: 12px 0;
+  color: #c9d1d9;
+}
+
+.skills {
+  line-height: 1.8;
+  color: #7ee787;
+}
+
+.button {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 20px;
+  border: 1px solid #58a6ff;
+  border-radius: 8px;
+  color: #58a6ff;
+  text-decoration: none;
+  transition: .3s;
+}
+
+.button:hover {
+  background: #58a6ff;
+  color: #0d1117;
+}
+
+@media (max-width: 600px) {
+
+  .content {
+    padding: 22px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .title {
+    display: none;
+  }
+
 }
