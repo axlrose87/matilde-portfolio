@@ -103,7 +103,7 @@ main{
 .ascii-name{
     display:block;
     color:#c7923e;
-    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
+    font-family:inherit;
     font-size:15px;
     font-weight:400;
     letter-spacing:0;
