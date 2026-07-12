@@ -1,4 +1,4 @@
-*{
+ *{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -18,7 +18,7 @@ body{
 .terminal{
 
     width:100%;
-    max-width:950px;
+    max-width:1250px;
 
     background:#1A1A1A;
 
@@ -32,6 +32,7 @@ body{
     0 30px 80px rgba(0,0,0,.45);
 
 }
+
 
 header{
 
@@ -47,6 +48,7 @@ header{
 
 }
 
+
 .dots{
 
     display:flex;
@@ -54,6 +56,7 @@ header{
     gap:8px;
 
 }
+
 
 .dots span{
 
@@ -65,23 +68,21 @@ header{
 
 }
 
+
 .dots span:nth-child(1){
-
     background:#FF5F57;
-
 }
+
 
 .dots span:nth-child(2){
-
     background:#FEBC2E;
-
 }
+
 
 .dots span:nth-child(3){
-
     background:#28C840;
-
 }
+
 
 .window-title{
 
@@ -95,11 +96,31 @@ header{
 
 }
 
-main{
 
-    padding:55px;
+.window-title::after{
+
+    content:"_";
+
+    animation:blink 1s infinite;
 
 }
+
+
+@keyframes blink{
+
+    50%{
+        opacity:0;
+    }
+
+}
+
+
+main{
+
+    padding:70px 90px;
+
+}
+
 
 .prompt{
 
@@ -111,15 +132,17 @@ main{
 
 }
 
+
 .hero{
 
     display:flex;
 
-    gap:55px;
+    gap:70px;
 
     align-items:center;
 
 }
+
 
 .ascii{
 
@@ -133,6 +156,7 @@ main{
 
 }
 
+
 h1{
 
     font-size:46px;
@@ -145,6 +169,7 @@ h1{
 
 }
 
+
 .role{
 
     color:#DDDDDD;
@@ -154,6 +179,7 @@ h1{
     font-size:18px;
 
 }
+
 
 .line{
 
@@ -165,6 +191,7 @@ h1{
 
 }
 
+
 .grid{
 
     display:grid;
@@ -175,11 +202,13 @@ h1{
 
 }
 
+
 strong{
 
     color:white;
 
 }
+
 
 p{
 
@@ -188,6 +217,7 @@ p{
     line-height:1.8;
 
 }
+
 
 .button{
 
@@ -209,6 +239,7 @@ p{
 
 }
 
+
 .button:hover{
 
     background:#C7923E;
@@ -217,70 +248,52 @@ p{
 
 }
 
+
 @media(max-width:800px){
 
-.hero{
+    body{
 
-flex-direction:column;
+        padding:15px;
 
-align-items:flex-start;
+    }
 
-}
 
-.grid{
+    .hero{
 
-grid-template-columns:1fr;
+        flex-direction:column;
 
-}
+        align-items:flex-start;
 
-main{
+    }
 
-padding:30px;
 
-}
+    .grid{
 
-h1{
+        grid-template-columns:1fr;
 
-font-size:34px;
+    }
 
-}
 
-.ascii{
+    main{
 
-font-size:12px;
+        padding:35px;
 
-}
+    }
 
-}
-.window-title::after {
-  content: "_";
-  animation: blink 1s infinite;
-}
 
-@keyframes blink {
-  50% {
-    opacity: 0;
-  }
-}
-@media (max-width: 700px) {
+    h1{
 
-  .hero {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+        font-size:34px;
 
-  .ascii {
-    font-size: 11px;
-    max-width: 100%;
-    overflow-x: auto;
-  }
+    }
 
-  h1 {
-    font-size: 30px;
-  }
 
-  main {
-    padding: 25px;
-  }
+    .ascii{
+
+        font-size:12px;
+
+        overflow-x:auto;
+
+    }
 
 }
