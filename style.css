@@ -193,3 +193,39 @@ strong{
     line-height:1.4;
     margin-top:18px;
 }
+.ascii-name{
+    display:block;
+    color:#c7923e;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
+    font-size:15px;
+    font-weight:400;
+    letter-spacing:2px;
+    line-height:1.4;
+    margin-top:18px;
+    white-space:pre;
+}
+
+.ascii-name{
+    display:block;
+    color:#c7923e;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
+    font-size:15px;
+    font-weight:400;
+    letter-spacing:2px;
+    line-height:1.4;
+    margin-top:18px;
+    white-space:pre;
+}
+
+
+.ascii-name{
+    display:block;
+    color:#c7923e;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
+    font-size:15px;
+    font-weight:400;
+    letter-spacing:2px;
+    line-height:1.4;
+    margin-top:18px;
+    white-space:pre;
+}
