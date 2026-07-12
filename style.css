@@ -181,4 +181,15 @@ strong{
     font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
     letter-spacing:3px;
     font-size:15px;
+    
+    
+}
+.ascii-name{
+    display:block;
+    color:#c7923e;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
+    font-size:15px;
+    letter-spacing:3px;
+    line-height:1.4;
+    margin-top:18px;
 }
