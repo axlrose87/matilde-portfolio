@@ -177,3 +177,8 @@ strong{
         font-size:12px;
     }
 }
+.ascii-name{
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
+    letter-spacing:3px;
+    font-size:15px;
+}
