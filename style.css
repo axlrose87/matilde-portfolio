@@ -21,7 +21,7 @@ body{
 
     min-height:100vh;
 
-    padding:40px;
+    padding:20px;
 
 }
 
@@ -31,7 +31,7 @@ body{
 
     width:100%;
 
-    max-width:1450px;
+    max-width:1600px;
 
     background:#1A1A1A;
 
@@ -73,6 +73,7 @@ header{
 }
 
 
+
 .dots span{
 
     width:12px;
@@ -82,6 +83,7 @@ header{
     border-radius:50%;
 
 }
+
 
 
 .dots span:nth-child(1){
@@ -138,7 +140,7 @@ header{
 
 main{
 
-    padding:55px 80px;
+    padding:60px 100px;
 
 }
 
@@ -170,7 +172,7 @@ main{
 
     display:flex;
 
-    gap:70px;
+    gap:80px;
 
     align-items:center;
 
@@ -232,21 +234,9 @@ h1{
 
 
 
-.grid{
-
-    display:grid;
-
-    grid-template-columns:1fr 1fr;
-
-    gap:55px;
-
-}
-
-
-
 strong{
 
-    color:white;
+    color:#FFFFFF;
 
 }
 
@@ -308,13 +298,6 @@ p{
         flex-direction:column;
 
         align-items:flex-start;
-
-    }
-
-
-    .grid{
-
-        grid-template-columns:1fr;
 
     }
 
