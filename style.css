@@ -91,12 +91,14 @@ main{
 
 .ascii{
     color:#c7923e;
-    font-family:"JetBrains Mono","SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
     white-space:pre;
     line-height:1;
     font-size:15px;
     letter-spacing:0;
     font-weight:700;
+    font-variant-ligatures:none;
+    font-feature-settings:"liga" 0;
     margin:0;
 }
 
@@ -118,4 +120,72 @@ h1{
     font-size:30px;
     font-weight:500;
     line-height:1.35;
-    letter-spacing:-0
+    letter-spacing:-0.3px;
+}
+
+.line{
+    height:1px;
+    background:#303030;
+    margin:50px 0;
+}
+
+p{
+    color:#cfcfcf;
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+    font-size:16px;
+    line-height:1.9;
+    max-width:900px;
+    margin-bottom:35px;
+}
+
+strong{
+    color:#c7923e;
+    font-weight:700;
+    letter-spacing:.3px;
+}
+
+.button{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 28px;
+    border:1px solid #c7923e;
+    border-radius:8px;
+    color:#c7923e;
+    text-decoration:none;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
+    transition:.3s;
+}
+
+.button:hover{
+    background:#c7923e;
+    color:#111;
+}
+
+@media(max-width:800px){
+
+    body{
+        padding:15px;
+    }
+
+    main{
+        padding:35px 25px;
+    }
+
+    .hero{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:40px;
+    }
+
+    h1{
+        font-size:22px;
+    }
+
+    p{
+        font-size:15px;
+    }
+
+    .ascii{
+        font-size:12px;
+    }
+}
