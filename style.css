@@ -1,157 +1,254 @@
-* {
-  box-sizing: border-box;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  background: #050505;
-  color: #d7dde5;
-  font-family: "SFMono-Regular", "Courier New", monospace;
-  display: flex;
-  justify-content: center;
-  padding: 40px 15px;
+body{
+    background:#111111;
+    color:#ECECEC;
+    font-family:Menlo,Consolas,"SF Mono","Courier New",monospace;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px;
 }
 
-.terminal {
-  width: 100%;
-  max-width: 900px;
-  background: #0b0f14;
-  border: 1px solid #30363d;
-  border-radius: 18px;
-  overflow: hidden;
-  box-shadow: 0 30px 80px rgba(0,0,0,.7);
+.terminal{
+
+    width:100%;
+    max-width:950px;
+
+    background:#1A1A1A;
+
+    border-radius:16px;
+
+    overflow:hidden;
+
+    border:1px solid #333;
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.45);
+
 }
 
-header {
-  height: 45px;
-  background: #161b22;
-  display: flex;
-  align-items: center;
-  padding: 0 18px;
+header{
+
+    height:48px;
+
+    background:#2A2A2A;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 18px;
+
 }
 
-.dots {
-  display: flex;
-  gap: 8px;
+.dots{
+
+    display:flex;
+
+    gap:8px;
+
 }
 
-.dots span {
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  display: block;
+.dots span{
+
+    width:12px;
+
+    height:12px;
+
+    border-radius:50%;
+
 }
 
-.dots span:nth-child(1) {
-  background: #ff5f57;
+.dots span:nth-child(1){
+
+    background:#FF5F57;
+
 }
 
-.dots span:nth-child(2) {
-  background: #febc2e;
+.dots span:nth-child(2){
+
+    background:#FEBC2E;
+
 }
 
-.dots span:nth-child(3) {
-  background: #28c840;
+.dots span:nth-child(3){
+
+    background:#28C840;
+
 }
 
-.window-title {
-  flex: 1;
-  text-align: center;
-  color: #8b949e;
-  font-size: 13px;
+.window-title{
+
+    flex:1;
+
+    text-align:center;
+
+    color:#B6B6B6;
+
+    font-size:13px;
+
 }
 
-main {
-  padding: 45px;
+main{
+
+    padding:55px;
+
 }
 
-.prompt {
-  color: #58a6ff;
-  margin: 25px 0 15px;
-  font-weight: bold;
+.prompt{
+
+    color:#C7923E;
+
+    margin:35px 0 18px;
+
+    font-weight:bold;
+
 }
 
-.hero {
-  display: flex;
-  align-items: center;
-  gap: 45px;
+.hero{
+
+    display:flex;
+
+    gap:55px;
+
+    align-items:center;
+
 }
 
-.ascii {
-  color: #7ee787;
-  font-size: 22px;
-  line-height: 1.2;
-  white-space: pre;
+.ascii{
+
+    color:#C7923E;
+
+    white-space:pre;
+
+    line-height:1.15;
+
+    font-size:15px;
+
 }
 
-h1 {
-  margin: 0;
-  font-size: 42px;
-  letter-spacing: 2px;
-  color: white;
+h1{
+
+    font-size:46px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    margin-bottom:18px;
+
 }
 
-.role {
-  color: #79c0ff;
-  line-height: 1.8;
-  margin-top: 15px;
+.role{
+
+    color:#DDDDDD;
+
+    line-height:1.8;
+
+    font-size:18px;
+
 }
 
-p {
-  line-height: 1.8;
-  color: #b8c1cc;
+.line{
+
+    height:1px;
+
+    background:#333;
+
+    margin:45px 0;
+
 }
 
-.line {
-  height: 1px;
-  background: #30363d;
-  margin: 35px 0;
+.grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:55px;
+
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
+strong{
+
+    color:white;
+
 }
 
-strong {
-  color: white;
+p{
+
+    color:#CFCFCF;
+
+    line-height:1.8;
+
 }
 
-.button {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 12px 20px;
-  border: 1px solid #58a6ff;
-  color: #58a6ff;
-  text-decoration: none;
-  border-radius: 6px;
+.button{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:14px 22px;
+
+    border:1px solid #C7923E;
+
+    color:#C7923E;
+
+    text-decoration:none;
+
+    border-radius:8px;
+
+    transition:.3s;
+
 }
 
-.button:hover {
-  background: #58a6ff;
-  color: #050505;
+.button:hover{
+
+    background:#C7923E;
+
+    color:#111;
+
 }
 
+@media(max-width:800px){
 
-@media(max-width:700px){
+.hero{
 
-main {
-  padding: 25px;
+flex-direction:column;
+
+align-items:flex-start;
+
 }
 
-.hero {
-  flex-direction: column;
-  align-items: flex-start;
+.grid{
+
+grid-template-columns:1fr;
+
 }
 
-h1 {
-  font-size: 32px;
+main{
+
+padding:30px;
+
 }
 
-.grid {
-  grid-template-columns: 1fr;
+h1{
+
+font-size:34px;
+
+}
+
+.ascii{
+
+font-size:12px;
+
 }
 
 }
