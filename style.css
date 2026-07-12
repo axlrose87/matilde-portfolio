@@ -299,3 +299,10 @@ p{
     }
 
 }
+.prompt::after{
+
+    content:"_";
+
+    animation:blink 1s infinite;
+
+}
