@@ -4,45 +4,33 @@
     box-sizing:border-box;
 }
 
-
 body{
-
-    background:#111111;
-
-    color:#ECECEC;
-
-    font-family:Menlo,Consolas,"SF Mono","Courier New",monospace;
-
+    background:#0d0d0d;
+    color:#e8e8e8;
+    font-family:"Inter", Arial, sans-serif;
     display:flex;
-
     justify-content:center;
-
     align-items:flex-start;
-
     min-height:100vh;
-
-    padding:30px;
-
+    padding:40px 20px;
 }
-
 
 
 .terminal{
 
     width:100%;
+    max-width:1200px;
 
-    max-width:1500px;
+    background:#151515;
 
-    background:#181818;
+    border:1px solid #303030;
 
-    border-radius:18px;
+    border-radius:14px;
 
     overflow:hidden;
 
-    border:1px solid #333;
-
     box-shadow:
-    0 35px 90px rgba(0,0,0,.55);
+    0 25px 70px rgba(0,0,0,.5);
 
 }
 
@@ -50,15 +38,15 @@ body{
 
 header{
 
-    height:50px;
+    height:46px;
 
-    background:#242424;
+    background:#202020;
 
     display:flex;
 
     align-items:center;
 
-    padding:0 20px;
+    padding:0 18px;
 
 }
 
@@ -68,7 +56,7 @@ header{
 
     display:flex;
 
-    gap:9px;
+    gap:8px;
 
 }
 
@@ -85,17 +73,17 @@ header{
 
 
 .dots span:nth-child(1){
-    background:#FF5F57;
+    background:#ff5f57;
 }
 
 
 .dots span:nth-child(2){
-    background:#FEBC2E;
+    background:#febc2e;
 }
 
 
 .dots span:nth-child(3){
-    background:#28C840;
+    background:#28c840;
 }
 
 
@@ -106,7 +94,9 @@ header{
 
     text-align:center;
 
-    color:#999;
+    color:#9b9b9b;
+
+    font-family:"JetBrains Mono","SFMono-Regular",monospace;
 
     font-size:13px;
 
@@ -123,7 +113,6 @@ header{
 }
 
 
-
 @keyframes blink{
 
     50%{
@@ -136,7 +125,7 @@ header{
 
 main{
 
-    padding:70px 100px;
+    padding:70px 90px;
 
 }
 
@@ -144,15 +133,15 @@ main{
 
 .prompt{
 
-    color:#C7923E;
+    color:#c7923e;
+
+    font-family:"JetBrains Mono","SFMono-Regular",monospace;
 
     font-size:14px;
 
-    font-weight:700;
-
     letter-spacing:1px;
 
-    margin:45px 0 28px;
+    margin:45px 0 30px;
 
 }
 
@@ -172,11 +161,11 @@ main{
 
     display:flex;
 
-    gap:90px;
-
     align-items:center;
 
-    padding:20px 0 40px;
+    gap:80px;
+
+    padding:20px 0 50px;
 
 }
 
@@ -184,7 +173,9 @@ main{
 
 .ascii{
 
-    color:#C7923E;
+    color:#c7923e;
+
+    font-family:"JetBrains Mono","SFMono-Regular",monospace;
 
     white-space:pre;
 
@@ -198,15 +189,17 @@ main{
 
 h1{
 
-    color:#F2F2F2;
+    color:#f2f2f2;
 
-    font-size:24px;
+    font-family:"Inter",Arial,sans-serif;
 
-    font-weight:700;
+    font-size:28px;
 
-    letter-spacing:1.5px;
+    font-weight:600;
 
-    line-height:1.6;
+    line-height:1.45;
+
+    letter-spacing:.5px;
 
 }
 
@@ -216,7 +209,7 @@ h1{
 
     height:1px;
 
-    background:#333;
+    background:#303030;
 
     margin:50px 0;
 
@@ -226,15 +219,15 @@ h1{
 
 p{
 
-    color:#CFCFCF;
+    color:#cfcfcf;
 
     font-size:16px;
 
     line-height:1.9;
 
-    margin-bottom:28px;
+    max-width:900px;
 
-    max-width:950px;
+    margin-bottom:35px;
 
 }
 
@@ -242,15 +235,11 @@ p{
 
 strong{
 
-    display:inline-block;
+    color:#c7923e;
 
-    color:#C7923E;
+    font-weight:700;
 
-    font-size:17px;
-
-    letter-spacing:.5px;
-
-    margin-bottom:8px;
+    letter-spacing:.3px;
 
 }
 
@@ -260,19 +249,19 @@ strong{
 
     display:inline-block;
 
-    margin-top:25px;
+    margin-top:30px;
 
-    padding:14px 26px;
+    padding:14px 28px;
 
-    border:1px solid #C7923E;
-
-    color:#C7923E;
-
-    text-decoration:none;
+    border:1px solid #c7923e;
 
     border-radius:8px;
 
-    font-weight:bold;
+    color:#c7923e;
+
+    text-decoration:none;
+
+    font-family:"JetBrains Mono","SFMono-Regular",monospace;
 
     transition:.3s;
 
@@ -282,7 +271,7 @@ strong{
 
 .button:hover{
 
-    background:#C7923E;
+    background:#c7923e;
 
     color:#111;
 
@@ -319,7 +308,7 @@ strong{
 
     h1{
 
-        font-size:20px;
+        font-size:22px;
 
     }
 
