@@ -1,0 +1,362 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+body{
+
+    background:#0b0b0b;
+
+    color:#e6e6e6;
+
+    font-family:"JetBrains Mono",
+    "SFMono-Regular",
+    Consolas,
+    monospace;
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+
+
+.terminal{
+
+    width:100%;
+
+    max-width:1300px;
+
+    height:850px;
+
+    background:#111;
+
+    border:1px solid #333;
+
+    border-radius:12px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 30px 80px rgba(0,0,0,.55);
+
+}
+
+
+
+header{
+
+    height:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:0 25px;
+
+    border-bottom:1px solid #333;
+
+    background:#151515;
+
+}
+
+
+
+.terminal-title{
+
+    color:#c7923e;
+
+    font-size:14px;
+
+    letter-spacing:1px;
+
+}
+
+
+
+main{
+
+    height:calc(100% - 50px);
+
+}
+
+
+
+.portfolio-layout{
+
+    display:grid;
+
+    grid-template-columns:280px 1fr;
+
+    height:100%;
+
+}
+
+
+
+/* LEFT PANEL */
+
+
+.unix-menu{
+
+    border-right:1px solid #333;
+
+    padding:40px 30px;
+
+    background:#0f0f0f;
+
+}
+
+
+
+.mr-logo{
+
+    font-size:70px;
+
+    font-weight:bold;
+
+    color:#c7923e;
+
+    letter-spacing:5px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.manual-title{
+
+    color:#888;
+
+    font-size:13px;
+
+    margin-bottom:35px;
+
+}
+
+
+
+.commands{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+
+
+.commands p{
+
+    color:#c7923e;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.commands a{
+
+    color:#ddd;
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.2s;
+
+}
+
+
+
+.commands a::before{
+
+    content:"> ";
+
+    color:#c7923e;
+
+}
+
+
+
+.commands a:hover{
+
+    color:#c7923e;
+
+}
+
+
+
+/* RIGHT PANEL */
+
+
+.content-panel{
+
+    padding:55px 70px;
+
+    overflow-y:auto;
+
+}
+
+
+
+.prompt{
+
+    color:#c7923e;
+
+    font-size:14px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.prompt::after{
+
+    content:"_";
+
+    animation:blink 1s infinite;
+
+}
+
+
+
+@keyframes blink{
+
+    50%{
+
+        opacity:0;
+
+    }
+
+}
+
+
+
+.identity h1{
+
+    font-family:Arial,sans-serif;
+
+    font-size:46px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.subtitle{
+
+    color:#ccc;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+}
+
+
+
+.line{
+
+    height:1px;
+
+    background:#333;
+
+    margin:50px 0;
+
+}
+
+
+
+.content{
+
+    color:#ccc;
+
+    font-family:Arial,sans-serif;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    margin-bottom:50px;
+
+}
+
+
+
+/* MOBILE */
+
+
+@media(max-width:800px){
+
+
+body{
+
+    padding:15px;
+
+}
+
+
+
+.terminal{
+
+    height:auto;
+
+}
+
+
+
+.portfolio-layout{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.unix-menu{
+
+    border-right:none;
+
+    border-bottom:1px solid #333;
+
+}
+
+
+
+.content-panel{
+
+    padding:35px 25px;
+
+}
+
+
+
+.identity h1{
+
+    font-size:32px;
+
+}
+
+
+
+}
