@@ -1,4 +1,4 @@
- *{
+*{
     margin:0;
     padding:0;
     box-sizing:border-box;
@@ -158,11 +158,14 @@ main{
 
 
 h1{
-    font-size:28px;
+
+    font-size:20px;
 
     font-weight:700;
 
-    letter-spacing:3px;
+    letter-spacing:2px;
+
+    line-height:1.5;
 
     margin-bottom:18px;
 
@@ -282,7 +285,7 @@ p{
 
     h1{
 
-        font-size:34px;
+        font-size:20px;
 
     }
 
