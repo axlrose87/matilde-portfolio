@@ -65,15 +65,16 @@ header{
     50%{opacity:0;}
 }
 
+
 main{
     padding:70px 90px;
 }
+
 
 .prompt{
     color:#c7923e;
     font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
     font-size:14px;
-    letter-spacing:0;
     margin:45px 0 30px;
 }
 
@@ -82,6 +83,7 @@ main{
     animation:blink 1s infinite;
 }
 
+
 .hero{
     display:flex;
     align-items:center;
@@ -89,18 +91,16 @@ main{
     padding:20px 0 50px;
 }
 
+
 .ascii{
     color:#c7923e;
     font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
     white-space:pre;
     line-height:1;
     font-size:15px;
-    letter-spacing:0;
     font-weight:700;
-    font-variant-ligatures:none;
-    font-feature-settings:"liga" 0;
-    margin:0;
 }
+
 
 .ascii-name{
     display:block;
@@ -111,17 +111,35 @@ main{
     letter-spacing:5px;
     line-height:1.4;
     margin-top:10px;
-    white-space:pre;
 }
 
-h1{
-    color:#f5f5f5;
-    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
-    font-size:30px;
-    font-weight:500;
-    line-height:1.35;
-    letter-spacing:-0.3px;
+
+.hero-info{
+    flex:1;
+    display:flex;
+    align-items:center;
 }
+
+
+.terminal-box{
+    width:100%;
+    max-width:600px;
+    border:1px solid #303030;
+    border-radius:10px;
+    background:#181818;
+    overflow:hidden;
+}
+
+
+.terminal-box-content{
+    padding:22px 24px;
+    color:#f5f5f5;
+    font-size:18px;
+    line-height:1.7;
+    font-weight:500;
+}
+
+
 
 .line{
     height:1px;
@@ -129,20 +147,40 @@ h1{
     margin:50px 0;
 }
 
+
+.terminal-card{
+
+    max-width:900px;
+
+    border-left:3px solid #c7923e;
+
+    padding-left:28px;
+
+    margin-bottom:45px;
+}
+
+
 p{
     color:#cfcfcf;
-    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
     font-size:16px;
     line-height:1.9;
     max-width:900px;
     margin-bottom:35px;
 }
 
+
+.terminal-card p{
+    margin-bottom:14px;
+    line-height:1.7;
+}
+
+
 strong{
     color:#c7923e;
     font-weight:700;
     letter-spacing:.3px;
 }
+
 
 .button{
     display:inline-block;
@@ -156,10 +194,13 @@ strong{
     transition:.3s;
 }
 
+
 .button:hover{
     background:#c7923e;
     color:#111;
 }
+
+
 
 @media(max-width:800px){
 
@@ -188,223 +229,9 @@ strong{
     .ascii{
         font-size:12px;
     }
-}
-.hero-info{
-    flex:1;
-    display:flex;
-    align-items:center;
-}
 
+    .terminal-box-content{
+        font-size:16px;
+    }
 
-.terminal-box{
-
-    width:100%;
-    max-width:600px;
-
-    border:1px solid #303030;
-    border-radius:10px;
-
-    background:#181818;
-
-    overflow:hidden;
-}
-
-
-.terminal-box-title{
-
-    padding:10px 18px;
-
-    background:#202020;
-
-    color:#c7923e;
-
-    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
-
-    font-size:13px;
-
-    letter-spacing:.8px;
-
-    border-bottom:1px solid #303030;
-}
-
-
-.terminal-box-content{
-
-    padding:20px 24px;
-
-    color:#f5f5f5;
-
-    font-size:18px;
-
-    line-height:1.7;
-
-    font-weight:500;
-}
-
-
-
-.terminal-card{
-
-    max-width:900px;
-
-    border-left:3px solid #c7923e;
-
-    padding-left:28px;
-
-    margin-bottom:45px;
-}
-
-
-
-.terminal-card p{
-
-    margin-bottom:14px;
-
-    line-height:1.7;
-}
-.hero-info{
-    flex:1;
-    display:flex;
-    align-items:center;
-}
-
-
-.terminal-box{
-
-    width:100%;
-    max-width:600px;
-
-    border:1px solid #303030;
-    border-radius:10px;
-
-    background:#181818;
-
-    overflow:hidden;
-}
-
-
-.terminal-box-title{
-
-    padding:10px 18px;
-
-    background:#202020;
-
-    color:#c7923e;
-
-    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
-
-    font-size:13px;
-
-    letter-spacing:.8px;
-
-    border-bottom:1px solid #303030;
-}
-
-
-.terminal-box-content{
-
-    padding:20px 24px;
-
-    color:#f5f5f5;
-
-    font-size:18px;
-
-    line-height:1.7;
-
-    font-weight:500;
-}
-
-
-
-.terminal-card{
-
-    max-width:900px;
-
-    border-left:3px solid #c7923e;
-
-    padding-left:28px;
-
-    margin-bottom:45px;
-}
-
-
-
-.terminal-card p{
-
-    margin-bottom:14px;
-
-    line-height:1.7;
-}
-.hero-info{
-    flex:1;
-    display:flex;
-    align-items:center;
-}
-
-
-.terminal-box{
-
-    width:100%;
-    max-width:600px;
-
-    border:1px solid #303030;
-    border-radius:10px;
-
-    background:#181818;
-
-    overflow:hidden;
-}
-
-
-.terminal-box-title{
-
-    padding:10px 18px;
-
-    background:#202020;
-
-    color:#c7923e;
-
-    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
-
-    font-size:13px;
-
-    letter-spacing:.8px;
-
-    border-bottom:1px solid #303030;
-}
-
-
-.terminal-box-content{
-
-    padding:20px 24px;
-
-    color:#f5f5f5;
-
-    font-size:18px;
-
-    line-height:1.7;
-
-    font-weight:500;
-}
-
-
-
-.terminal-card{
-
-    max-width:900px;
-
-    border-left:3px solid #c7923e;
-
-    padding-left:28px;
-
-    margin-bottom:45px;
-}
-
-
-
-.terminal-card p{
-
-    margin-bottom:14px;
-
-    line-height:1.7;
 }
