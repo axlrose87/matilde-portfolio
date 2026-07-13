@@ -1,222 +1,265 @@
-<!DOCTYPE html>
-<html>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#0d0d0d;
+    color:#e8e8e8;
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    padding:40px 20px;
+}
+
+.terminal{
+    width:100%;
+    max-width:1200px;
+    background:#151515;
+    border:1px solid #303030;
+    border-radius:14px;
+    overflow:hidden;
+    box-shadow:0 25px 70px rgba(0,0,0,.5);
+}
+
+header{
+    height:46px;
+    background:#202020;
+    display:flex;
+    align-items:center;
+    padding:0 18px;
+}
+
+.dots{
+    display:flex;
+    gap:8px;
+}
+
+.dots span{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+}
+
+.dots span:nth-child(1){background:#ff5f57;}
+.dots span:nth-child(2){background:#febc2e;}
+.dots span:nth-child(3){background:#28c840;}
+
+.window-title{
+    flex:1;
+    text-align:center;
+    color:#8f8f8f;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
+    font-size:13px;
+}
+
+.window-title::after{
+    content:"_";
+    animation:blink 1s infinite;
+}
 
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+@keyframes blink{
+    50%{opacity:0;}
+}
 
-<title>Matilde Rodríguez | Portfolio</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+main{
+    padding:70px 90px;
+}
 
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-<link rel="stylesheet" href="style.css">
-<link rel="icon" href="favicon.svg">
-</head>
+.prompt{
+    color:#c7923e;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
+    font-size:14px;
+    margin:45px 0 30px;
+}
 
+.prompt::after{
+    content:"_";
+    animation:blink 1s infinite;
+}
 
-<body>
 
-<div class="terminal">
+.hero{
+    display:flex;
+    align-items:center;
+    gap:80px;
+    padding:20px 0 50px;
+}
 
 
-<header>
+.ascii{
+    color:#c7923e;
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas","Courier New",monospace;
+    white-space:pre;
+    line-height:1;
+    font-size:15px;
+    font-weight:700;
+    margin:0;
+}
 
-<div class="dots">
-<span></span>
-<span></span>
-<span></span>
-</div>
 
-<div class="window-title">
-matilde@career:~$
-</div>
+.ascii-name{
+    display:block;
+    color:#c7923e;
+    font-family:"Inter",system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+    font-size:15px;
+    font-weight:500;
+    letter-spacing:5px;
+    line-height:1.4;
+    margin-top:10px;
+}
 
-</header>
 
+.hero-info{
+    flex:1;
+    display:flex;
+    align-items:center;
+}
 
 
-<main>
+.terminal-box{
 
+    width:100%;
+    max-width:600px;
 
-<div class="prompt">$ neofetch</div>
+    border:1px solid #303030;
+    border-radius:10px;
 
+    background:#181818;
 
-<section class="hero">
+    overflow:hidden;
+}
 
-<div class="ascii">
-███╗   ███╗ ██████╗
-████╗ ████║ ██╔══██╗
-██╔████╔██║ ██████╔╝
-██║╚██╔╝██║ ██╔══██╗
-██║ ╚═╝ ██║ ██║  ██║
-╚═╝     ╚═╝ ╚═╝  ╚═╝
 
-<span class="ascii-name">M A T I L D E
-R O D R Í G U E Z</span>
-</div>
+.terminal-box-content{
 
+    padding:22px 24px;
 
-<div class="hero-info">
+    color:#f5f5f5;
 
-<div class="terminal-box">
+    font-size:18px;
 
-<div class="terminal-box-title">
-PROFESSIONAL PROFILE
-</div>
+    line-height:1.7;
 
-<div class="terminal-box-content">
-English Language Specialist │ Teacher │ Translator<br>
-Proofreader │ Educational Content Creator
-</div>
+    font-weight:500;
+}
 
-</div>
 
-</div>
 
+.line{
+    height:1px;
+    background:#303030;
+    margin:50px 0;
+}
 
-</section>
 
 
+.terminal-card{
 
-<div class="line"></div>
+    max-width:900px;
 
+    border-left:3px solid #c7923e;
 
+    padding-left:28px;
 
-<div class="prompt">$ profile</div>
+    margin-bottom:45px;
+}
 
 
-<div class="terminal-card">
+p{
 
-<p>Discipline. Precision. Systems thinking.</p>
+    color:#cfcfcf;
 
-<p>Engineering shaped my analytical mindset.</p>
+    font-size:16px;
 
-<p>Technical translation bridges languages, cultures and specialised knowledge.</p>
+    line-height:1.9;
 
-<p>English language teaching transforms complexity into clear, practical communication.</p>
+    max-width:900px;
 
-<p>Empathy and active listening strengthen every learning and communication experience.</p>
+    margin-bottom:35px;
+}
 
-</div>
 
+.terminal-card p{
 
+    margin-bottom:14px;
 
-<div class="prompt">$ experience</div>
+    line-height:1.7;
+}
 
 
+strong{
 
-<p>
-<strong>CAMBRIDGE EXAM SPECIALIST</strong><br>
-<span>Academia Avenida de Andalucía · Málaga, Spain</span><br>
-<span>October 2018 — November 2025</span>
-</p>
+    color:#c7923e;
 
-<p>
-Cambridge programmes (B1–C2), exam preparation,
-assessment strategies and course development.
-</p>
+    font-weight:700;
 
+    letter-spacing:.3px;
+}
 
 
-<p>
-<strong>BUSINESS ENGLISH & COMMUNICATION TRAINER</strong><br>
-<span>Accenture · Málaga TechPark</span><br>
-<span>September 2016 — September 2018</span>
-</p>
+.button{
 
-<p>
-Corporate communication training for international teams,
-presentations and workplace English.
-</p>
+    display:inline-block;
 
+    margin-top:30px;
 
+    padding:14px 28px;
 
-<p>
-<strong>TECHNICAL & ENGINEERING TRANSLATOR (EN–ES)</strong><br>
-<span>Dancover Denmark · Denmark</span><br>
-<span>September 2016 — Present</span>
-</p>
+    border:1px solid #c7923e;
 
-<p>
-Technical documentation, localisation and AI-assisted
-translation workflows.
-</p>
+    border-radius:8px;
 
+    color:#c7923e;
 
+    text-decoration:none;
 
-<p>
-<strong>ONE-TO-ONE BUSINESS ENGLISH TRAINER</strong><br>
-<span>O2 Telefónica UK · London</span><br>
-<span>January 2012 — June 2016</span>
-</p>
+    font-family:"SF Mono","Cascadia Mono","IBM Plex Mono","Consolas",monospace;
 
+    transition:.3s;
+}
 
 
+.button:hover{
 
-<div class="line"></div>
+    background:#c7923e;
 
+    color:#111;
+}
 
 
 
-<div class="prompt">$ education</div>
+@media(max-width:800px){
 
+    body{
+        padding:15px;
+    }
 
-<p>
-<strong>BSc (Hons) Engineering Design</strong><br>
-<span>London South Bank University</span>
-</p>
+    main{
+        padding:35px 25px;
+    }
 
+    .hero{
 
-<p>
-<strong>CELTA</strong><br>
-<strong>DELTA Module One</strong>
-</p>
+        flex-direction:column;
 
+        align-items:flex-start;
 
+        gap:40px;
+    }
 
+    .ascii{
+        font-size:12px;
+    }
 
-<div class="prompt">$ ai_tools</div>
+    .terminal-box-content{
 
+        font-size:16px;
+    }
 
-<p>
-Generative AI for ELT<br>
-AI-assisted lesson planning<br>
-Prompt engineering<br>
-Translation workflows
-</p>
-
-
-
-
-<div class="line"></div>
-
-
-
-
-<div class="prompt">$ contact</div>
-
-
-<p>
-Málaga, Spain
-</p>
-
-
-
-<a class="button" href="Matilde_Rodriguez_ASCII_A4.pdf" download>
-DOWNLOAD CV
-</a>
-
-
-
-</main>
-
-
-</div>
-
-
-</body>
-
-</html>
+}
