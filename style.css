@@ -368,7 +368,7 @@ letter-spacing:4px;
 
 
     .contact-box{
-    width:max-content;
+    width:fit-content;
     max-width:100%;
 }
 
