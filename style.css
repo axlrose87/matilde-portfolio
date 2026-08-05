@@ -207,7 +207,19 @@ h1{
     display:none;
 }
 
+.box-content{
 
+    color:#d8d8d8;
+
+}
+
+.contact-prompt + .terminal-box .box-content{
+
+    font-size:17px;
+
+    line-height:2;
+
+}
 @media(max-width:850px){
 
     body{
