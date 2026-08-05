@@ -206,9 +206,26 @@ letter-spacing:5px;
     font-family:"IBM Plex Mono","SF Mono",monospace;
     color:#d8d8d8;
     font-size:14px;
-    line-height:1.7;
-    white-space:pre-wrap;
-    margin-bottom:35px;
+    line-height:1.5;
+    margin-bottom:30px;
+
+    border:1px solid #c7923e;
+    padding:8px 12px;
+
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+
+}
+
+
+
+.terminal-box h2{
+
+    color:#c7923e;
+    font-size:14px;
+    font-weight:600;
+    margin:0;
 
 }
 
@@ -216,7 +233,7 @@ letter-spacing:5px;
 
 .contact-box{
 
-    width:max-content;
+    width:fit-content;
 
 }
 
@@ -224,16 +241,8 @@ letter-spacing:5px;
 
 .iam-box{
 
-    width:max-content;
-    max-width:100%;
-
-}
-
-
-
-.box-line{
-
-    color:#c7923e;
+    width:100%;
+    max-width:650px;
 
 }
 
@@ -241,7 +250,7 @@ letter-spacing:5px;
 
 .box-content{
 
-    padding:8px 2px;
+    padding:0;
     white-space:pre-wrap;
 
 }
@@ -258,10 +267,9 @@ letter-spacing:5px;
 
 .iam-box .box-content{
 
-    line-height:1.7;
+    line-height:1.6;
 
 }
-
 
 
 .line{
