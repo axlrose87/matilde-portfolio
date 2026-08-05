@@ -96,11 +96,10 @@ main{
 
 .hero{
     display:flex;
-    align-items:center;
-    gap:70px;
+    align-items:flex-start;
+    gap:50px;
     padding-bottom:45px;
 }
-
 
 .ascii{
     color:#c7923e;
@@ -124,6 +123,7 @@ main{
 
 .hero-content{
     flex:1;
+    min-width:0;
 }
 
 
@@ -144,9 +144,9 @@ h1{
 
 
 .hero-text{
-    font-size:14px;
+    font-size:15px;
     line-height:1.8;
-    max-width:600px;
+    max-width:650px;
     margin-bottom:30px;
 }
 
@@ -179,15 +179,10 @@ h1{
 .terminal-box{
     font-family:"IBM Plex Mono","SF Mono",monospace;
     color:#d8d8d8;
-    font-size:14px;
-    line-height:1.7;
+    font-size:16px;
+    line-height:1.8;
     white-space:pre;
     margin-bottom:35px;
-}
-
-
-.box-line{
-    color:#c7923e;
 }
 
 
