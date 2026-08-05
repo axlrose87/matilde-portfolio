@@ -359,12 +359,15 @@ letter-spacing:4px;
 
 
 
-    .contact-box,
-    .iam-box{
+    .contact-box{
+    width:max-content;
+    max-width:100%;
+}
 
-        width:100%;
 
-    }
+.iam-box{
+    width:100%;
+}
 
 
 
