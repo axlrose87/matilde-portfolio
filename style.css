@@ -4,6 +4,7 @@
     box-sizing:border-box;
 }
 
+
 body{
     background:#0a0a0a;
     color:#d8d8d8;
@@ -14,6 +15,7 @@ body{
     min-height:100vh;
     padding:35px 20px;
 }
+
 
 .terminal{
     width:100%;
@@ -40,11 +42,13 @@ header{
     gap:8px;
 }
 
+
 .dots span{
     width:11px;
     height:11px;
     border-radius:50%;
 }
+
 
 .dots span:nth-child(1){background:#ff5f57;}
 .dots span:nth-child(2){background:#febc2e;}
@@ -66,7 +70,9 @@ header{
 
 
 @keyframes blink{
-    50%{opacity:0;}
+    50%{
+        opacity:0;
+    }
 }
 
 
@@ -116,6 +122,60 @@ main{
 }
 
 
+.hero-content{
+    flex:1;
+}
+
+
+h1{
+    color:#d8d8d8;
+    font-size:28px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+
+.roles{
+    color:#c7923e;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+
+.hero-text{
+    font-size:14px;
+    line-height:1.8;
+    max-width:600px;
+    margin-bottom:30px;
+}
+
+
+.button-group{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+
+.button{
+    display:inline-block;
+    padding:12px 24px;
+    border:1px solid #c7923e;
+    color:#c7923e;
+    text-decoration:none;
+    font-family:"IBM Plex Mono",monospace;
+    font-size:13px;
+    text-transform:uppercase;
+}
+
+
+.button:hover{
+    background:#c7923e;
+    color:#111;
+}
+
+
 .terminal-box{
     font-family:"IBM Plex Mono","SF Mono",monospace;
     color:#d8d8d8;
@@ -143,22 +203,13 @@ main{
     margin:45px 0;
 }
 
-
-.button{
-    display:inline-block;
-    margin-top:30px;
-    padding:12px 24px;
-    border:1px solid #c7923e;
-    color:#c7923e;
-    text-decoration:none;
-    font-family:"IBM Plex Mono",monospace;
-    font-size:13px;
+.contact-prompt{
+    margin-top:35px;
 }
 
 
-.button:hover{
-    background:#c7923e;
-    color:#111;
+#portfolio{
+    display:none;
 }
 
 
@@ -168,9 +219,11 @@ main{
         padding:15px;
     }
 
+
     main{
         padding:35px 25px;
     }
+
 
     .hero{
         flex-direction:column;
@@ -178,9 +231,43 @@ main{
         gap:35px;
     }
 
+
     .ascii{
         font-size:12px;
     }
+
+
+    .ascii-name{
+        font-size:12px;
+        letter-spacing:3px;
+    }
+
+
+    h1{
+        font-size:22px;
+    }
+
+
+    .roles{
+        font-size:13px;
+    }
+
+
+    .hero-text{
+        font-size:13px;
+    }
+
+
+    .button-group{
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+
+    .button{
+        width:auto;
+    }
+
 
     .terminal-box{
         font-size:12px;
