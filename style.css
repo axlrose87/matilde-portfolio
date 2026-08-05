@@ -179,16 +179,17 @@ h1{
 .terminal-box{
     font-family:"IBM Plex Mono","SF Mono",monospace;
     color:#d8d8d8;
-    font-size:16px;
-    line-height:1.8;
+    font-size:15px;
+    line-height:1.5;
     white-space:pre;
     margin-bottom:35px;
 }
 
 
 .box-content{
-    padding:12px 2px;
+    padding:8px 12px;
     white-space:pre-wrap;
+    line-height:1.5;
 }
 
 
@@ -213,13 +214,7 @@ h1{
 
 }
 
-.contact-prompt + .terminal-box .box-content{
 
-    font-size:17px;
-
-    line-height:2;
-
-}
 @media(max-width:850px){
 
     body{
