@@ -28,6 +28,7 @@ body{
 }
 
 
+
 header{
     height:42px;
     background:#1b1b1b;
@@ -35,6 +36,7 @@ header{
     align-items:center;
     padding:0 16px;
 }
+
 
 
 .dots{
@@ -55,6 +57,7 @@ header{
 .dots span:nth-child(3){background:#28c840;}
 
 
+
 .window-title{
     flex:1;
     text-align:center;
@@ -69,18 +72,19 @@ header{
 }
 
 
-@keyframes blink{
 
+@keyframes blink{
     50%{
         opacity:0;
     }
-
 }
+
 
 
 main{
     padding:55px 70px;
 }
+
 
 
 .prompt{
@@ -95,13 +99,37 @@ main{
     animation:blink 1s infinite;
 }
 
-
 .hero{
     display:flex;
     align-items:center;
     gap:70px;
     padding-bottom:45px;
 }
+
+
+
+.hero-content{
+    flex:1;
+}
+
+
+
+.name{
+    color:#d8d8d8;
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+
+
+.roles{
+    color:#d8d8d8;
+    font-size:15px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
 
 
 .ascii{
@@ -114,58 +142,16 @@ main{
 }
 
 
+
 .ascii-name{
     display:block;
     color:#c7923e;
-    font-size:18px;
+    font-size:15px;
     letter-spacing:4px;
     line-height:1.5;
-    margin-top:15px;
+    margin-top:12px;
 }
 
-
-.hero-content{
-    flex:1;
-}
-
-
-.roles{
-    color:#c7923e;
-    font-size:15px;
-    line-height:1.8;
-}
-.hero-text{
-    font-size:14px;
-    line-height:1.8;
-    max-width:600px;
-    margin-top:25px;
-    margin-bottom:30px;
-}
-
-
-.button-group{
-    display:flex;
-    gap:20px;
-    flex-wrap:nowrap;
-}
-
-
-.button{
-    display:inline-block;
-    padding:12px 24px;
-    border:1px solid #c7923e;
-    color:#c7923e;
-    text-decoration:none;
-    font-family:"IBM Plex Mono",monospace;
-    font-size:13px;
-    text-transform:uppercase;
-}
-
-
-.button:hover{
-    background:#c7923e;
-    color:#111;
-}
 
 
 .terminal-box{
@@ -178,20 +164,31 @@ main{
 }
 
 
+
 .box-line{
     color:#c7923e;
 }
 
 
+
 .box-content{
-    padding:8px 2px;
+    padding:12px 2px;
     white-space:pre-wrap;
 }
 
 
-.contact-prompt{
-    margin-top:35px;
+
+.contact-box{
+    width:max-content;
 }
+
+
+
+.contact-box .box-content{
+    padding:8px 2px;
+    line-height:1.5;
+}
+
 
 
 .line{
@@ -201,10 +198,31 @@ main{
 }
 
 
-#portfolio{
-    display:block;
+
+.buttons{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
 }
 
+
+
+.button{
+    display:inline-block;
+    padding:12px 24px;
+    border:1px solid #c7923e;
+    color:#c7923e;
+    text-decoration:none;
+    font-family:"IBM Plex Mono",monospace;
+    font-size:13px;
+}
+
+
+
+.button:hover{
+    background:#c7923e;
+    color:#111;
+}
 
 @media(max-width:850px){
 
@@ -230,30 +248,35 @@ main{
     }
 
 
-    .ascii-name{
-        font-size:12px;
-        letter-spacing:3px;
+    .name{
+        font-size:20px;
     }
 
 
     .roles{
-        font-size:13px;
-    }
-
-
-    .hero-text{
-        font-size:13px;
-    }
-
-
-    .button-group{
-        flex-direction:column;
-        align-items:flex-start;
+        font-size:12px;
     }
 
 
     .terminal-box{
         font-size:12px;
+    }
+
+
+    .contact-box{
+        width:100%;
+    }
+
+
+    .buttons{
+        flex-direction:column;
+        width:100%;
+    }
+
+
+    .button{
+        width:100%;
+        text-align:center;
     }
 
 }
