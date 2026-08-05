@@ -129,8 +129,8 @@ main{
 
     display:block;
     color:#c7923e;
-    font-size:18px;
-    letter-spacing:4px;
+    font-size:20px;
+letter-spacing:5px;
     line-height:1.5;
     margin-top:15px;
 
@@ -310,8 +310,8 @@ main{
 
     .ascii-name{
 
-        font-size:13px;
-        letter-spacing:3px;
+        font-size:16px;
+letter-spacing:4px;
 
     }
 
