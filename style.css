@@ -169,7 +169,22 @@ main{
 }
 
 
-111;
+.terminal-box{
+    border:1px solid #c7923e;
+    border-radius:6px;
+    padding:16px 20px;
+    margin:10px 0 30px;
+    font-family:"IBM Plex Mono","SF Mono",monospace;
+    color:#d8d8d8;
+    font-size:14px;
+}
+
+.box-title{
+    color:#c7923e;
+    font-size:14px;
+    font-weight:600;
+    margin-bottom:14px;
+    text-transform:uppercase;
 }
 
 
