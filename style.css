@@ -262,7 +262,18 @@ letter-spacing:5px;
     line-height:1.5;
 
 }
+.contact-box a{
 
+    color:#d8d8d8;
+    text-decoration:none;
+
+}
+
+.contact-box a:hover{
+
+    color:#c7923e;
+
+}
 
 
 .iam-box .box-content{
