@@ -269,12 +269,23 @@ letter-spacing:5px;
 
 }
 
+.contact-box a:visited{
+
+    color:#d8d8d8;
+
+}
+
 .contact-box a:hover{
 
     color:#c7923e;
 
 }
 
+.contact-box a:active{
+
+    color:#c7923e;
+
+}
 
 .iam-box .box-content{
 
